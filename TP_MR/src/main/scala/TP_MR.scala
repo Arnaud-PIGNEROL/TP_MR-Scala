@@ -19,7 +19,7 @@ object TP_MR {
    * Do this to check your answer after each exercise
    */
 
-  def giveMeHelloString : String = ???
+  def giveMeHelloString : String = "Hello"
 
   /**
    * 1) Find the last elements of a list.
@@ -30,10 +30,14 @@ object TP_MR {
    */
 
   //TODO define lastA using : match, case, ::, Nil
-  def lastA[T](list: List[T]): Option[T] = ???
+  def lastA[T](l : List[T]) : Option[T] = l match {
+    case x :: Nil => Some(x)
+    case _ :: tail => lastA(tail)
+    case _ => None
+  }
 
   //TODO define lastB using method of the List collection
-  def lastB[T](list: List[T]): Option[T] = ???
+  def lastB[T](l : List[T]) : Option[T] = l.lastOption
 
   /**
    * 2) Find the Kth element of a list:
@@ -45,11 +49,15 @@ object TP_MR {
    */
 
   //TODO define nthA using : match, case, ::, Nil
-  def nthA[T](x: Int, l: List[T]): Option[T] = ???
+  def nthA[T](x : Int, l : List[T]) : Option[T] = (x, l) match {
+    case (0, h :: _) => Some(h)
+    case (x, _ :: tail) => nthA(x - 1, tail)
+    case(_, Nil) => None
+  }
 
 
   //TODO define nthB using method of the List collection
-  def nthB[T](x: Int, l: List[T]): Option[T] = ???
+  def nthB[T](x: Int, l: List[T]) : Option[T] = l.lift(x)
 
   /**
    * 3) Reverse a list:
@@ -60,10 +68,12 @@ object TP_MR {
    */
 
   //TODO define reverseA using : foldLeft, ::
-  def reverseA[T](list: List[T]): List[T] = ???
+  def reverseA[T](l : List[T]) : List[T] = l.foldLeft(List[T]()) {
+      (r, h) => h :: r
+    }
 
   //TODO define reverseB using method of the List collection
-  def reverseB[T](list: List[T]): List[T] = ???
+  def reverseB[T](l : List[T]) : List[T] = l.reverse
 
   /**
    * 4) Sum of wages:
@@ -77,7 +87,7 @@ object TP_MR {
   case class Employee(name: String, salary: Double)
 
   //TODO define salarySum which is the sum of the salaries from a list of employees
-  def salarySum(employees: List[Employee]): Double = ???
+  def salarySum(employees: List[Employee]): Double = employees.map(t => (t.name, t.salary)).toMap.foldLeft(0.0)(_+_._2)
 
 
   /**
@@ -92,7 +102,7 @@ object TP_MR {
   case class User(name: String, address: String)
 
   //TODO define addressOf which gives a list of addresses from a list of users
-  def addressOf(users: List[User]): List[String] = ???
+  def addressOf(users: List[User]): List[String] = users.map(t => (t.name,t.address)).toMap.values.toList
 
   /**
    * 6) Define the average function :
