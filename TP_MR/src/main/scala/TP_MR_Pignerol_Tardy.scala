@@ -1,7 +1,7 @@
 import scala.collection.MapView
 import scala.io.BufferedSource
 
-object TP_MR {
+object TP_MR_Pignerol_Tardy {
   /**
    * Answer question from 1 to 3
    * A) first using : match, case, ::, Nil or foldLeft

@@ -1,4 +1,4 @@
-import TP_MR._
+import TP_MR_Pignerol_Tardy._
 
 class TP_MapReduce_Test extends org.scalatest.FunSuite {
   test("giveMeHelloString function"){
@@ -6,39 +6,39 @@ class TP_MapReduce_Test extends org.scalatest.FunSuite {
   }
 
   test("lastA function") {
-    assert(TP_MR.lastA(List(1, 1, 2, 3, 5, 8)).get == 8)
-    assert(TP_MR.lastA(Nil).isEmpty)
+    assert(TP_MR_Pignerol_Tardy.lastA(List(1, 1, 2, 3, 5, 8)).get == 8)
+    assert(TP_MR_Pignerol_Tardy.lastA(Nil).isEmpty)
   }
 
   test("lastB function") {
-    assert(TP_MR.lastB(List(1, 1, 2, 3, 5, 8)).get == 8)
-    assert(TP_MR.lastB(Nil).isEmpty)
+    assert(TP_MR_Pignerol_Tardy.lastB(List(1, 1, 2, 3, 5, 8)).get == 8)
+    assert(TP_MR_Pignerol_Tardy.lastB(Nil).isEmpty)
   }
 
   test("nthA function") {
-    assert(TP_MR.nthA(2, List(1, 1, 2, 3, 5, 8)).get == 2)
-    assert(TP_MR.nthA(6, List(1, 1, 2, 3, 5, 8)).isEmpty)
-    assert(TP_MR.nthA(-4, List(1, 1, 2, 3, 5, 8)).isEmpty)
-    assert(TP_MR.nthA(0, List()).isEmpty)
-    assert(TP_MR.nthA(0, Nil).isEmpty)
+    assert(TP_MR_Pignerol_Tardy.nthA(2, List(1, 1, 2, 3, 5, 8)).get == 2)
+    assert(TP_MR_Pignerol_Tardy.nthA(6, List(1, 1, 2, 3, 5, 8)).isEmpty)
+    assert(TP_MR_Pignerol_Tardy.nthA(-4, List(1, 1, 2, 3, 5, 8)).isEmpty)
+    assert(TP_MR_Pignerol_Tardy.nthA(0, List()).isEmpty)
+    assert(TP_MR_Pignerol_Tardy.nthA(0, Nil).isEmpty)
   }
 
   test("nthB function") {
-    assert(TP_MR.nthB(2, List(1, 1, 2, 3, 5, 8)).get == 2)
-    assert(TP_MR.nthB(6, List(1, 1, 2, 3, 5, 8)).isEmpty)
-    assert(TP_MR.nthB(-4, List(1, 1, 2, 3, 5, 8)).isEmpty)
-    assert(TP_MR.nthB(0, List()).isEmpty)
-    assert(TP_MR.nthB(0, Nil).isEmpty)
+    assert(TP_MR_Pignerol_Tardy.nthB(2, List(1, 1, 2, 3, 5, 8)).get == 2)
+    assert(TP_MR_Pignerol_Tardy.nthB(6, List(1, 1, 2, 3, 5, 8)).isEmpty)
+    assert(TP_MR_Pignerol_Tardy.nthB(-4, List(1, 1, 2, 3, 5, 8)).isEmpty)
+    assert(TP_MR_Pignerol_Tardy.nthB(0, List()).isEmpty)
+    assert(TP_MR_Pignerol_Tardy.nthB(0, Nil).isEmpty)
   }
 
   test("reverseA function") {
-    assert(TP_MR.reverseA(List(1, 2, 3, 4, 5)) == List(5, 4, 3, 2, 1))
-    assert(TP_MR.reverseA(Nil) == Nil)
+    assert(TP_MR_Pignerol_Tardy.reverseA(List(1, 2, 3, 4, 5)) == List(5, 4, 3, 2, 1))
+    assert(TP_MR_Pignerol_Tardy.reverseA(Nil) == Nil)
   }
 
   test("reverseB function") {
-    assert(TP_MR.reverseB(List(1, 2, 3, 4, 5)) == List(5, 4, 3, 2, 1))
-    assert(TP_MR.reverseB(Nil) == Nil)
+    assert(TP_MR_Pignerol_Tardy.reverseB(List(1, 2, 3, 4, 5)) == List(5, 4, 3, 2, 1))
+    assert(TP_MR_Pignerol_Tardy.reverseB(Nil) == Nil)
   }
 
   test("salarySum function") {
