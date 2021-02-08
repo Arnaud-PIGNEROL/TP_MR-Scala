@@ -1,4 +1,13 @@
-[0m[[0m[31merror[0m] [0m[0mD:\efrei\cours\s8\Data engineer\github\TP_MR-Scala\TP_MR\src\main\scala\TP_MR_Courtois_Jaouen.scala:4:8: TP_MR is already defined as object TP_MR[0m
-[0m[[0m[31merror[0m] [0m[0mobject TP_MR {[0m
-[0m[[0m[31merror[0m] [0m[0m       ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mD:\efrei\cours\s8\Data engineer\github\TP_MR-Scala\TP_MR\src\main\scala\TP_MR_Pignerol_Tardy.scala:116:28: value _2 is not a member of Iterator[Double][0m
+[0m[[0m[31merror[0m] [0m[0m    case values if (values._2 = 0.0) => Some(0.0)[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\efrei\cours\s8\Data engineer\github\TP_MR-Scala\TP_MR\src\main\scala\TP_MR_Pignerol_Tardy.scala:276:15: not found: type BufferedSource[0m
+[0m[[0m[31merror[0m] [0m[0m    val file: BufferedSource = Source.fromFile("resources/ski_stations_ratings.csv")[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\efrei\cours\s8\Data engineer\github\TP_MR-Scala\TP_MR\src\main\scala\TP_MR_Pignerol_Tardy.scala:284:35: not found: type MapView[0m
+[0m[[0m[31merror[0m] [0m[0m    val partitionedRatingWithOne: MapView[String, Iterable[(Double, Int)]] =[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\efrei\cours\s8\Data engineer\github\TP_MR-Scala\TP_MR\src\main\scala\TP_MR_Pignerol_Tardy.scala:288:40: not found: type MapView[0m
+[0m[[0m[31merror[0m] [0m[0m    val partitionedSumRatingsAndCount: MapView[String, (Double, Int)] =[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
