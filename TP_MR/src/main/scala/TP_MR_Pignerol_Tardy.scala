@@ -1,5 +1,4 @@
-import scala.collection.MapView
-import scala.io.BufferedSource
+import java.awt.geom.NoninvertibleTransformException
 
 object TP_MR_Pignerol_Tardy {
   /**
@@ -57,7 +56,7 @@ object TP_MR_Pignerol_Tardy {
 
 
   //TODO define nthB using method of the List collection
-  def nthB[T](x: Int, l: List[T]) : Option[T] = l.lift(x)
+  def nthB[T](x : Int, l : List[T]) : Option[T] = l.lift(x)
 
   /**
    * 3) Reverse a list:
@@ -84,10 +83,10 @@ object TP_MR_Pignerol_Tardy {
    * res0: Double = 5500.0
    */
 
-  case class Employee(name: String, salary: Double)
+  case class Employee(name : String, salary : Double)
 
   //TODO define salarySum which is the sum of the salaries from a list of employees
-  def salarySum(employees: List[Employee]): Double = employees.map(t => (t.name, t.salary)).toMap.foldLeft(0.0)(_+_._2)
+  def salarySum(employees : List[Employee]) : Double = employees.map(t => (t.name, t.salary)).toMap.foldLeft(0.0)(_+_._2)
 
 
   /**
@@ -99,10 +98,10 @@ object TP_MR_Pignerol_Tardy {
    * res0: List[String] = List("5 Av. des Champs-Élysées, Paris","17 Boulevard Poissonnière, Paris")
    */
 
-  case class User(name: String, address: String)
+  case class User(name : String, address : String)
 
   //TODO define addressOf which gives a list of addresses from a list of users
-  def addressOf(users: List[User]): List[String] = users.map(t => (t.name,t.address)).toMap.values.toList
+  def addressOf(users : List[User]) : List[String] = users.map(t => (t.name, t.address)).toMap.values.toList
 
   /**
    * 6) Define the average function :
@@ -113,7 +112,10 @@ object TP_MR_Pignerol_Tardy {
    */
 
   //TODO define average which takes an Iterator of Double in parameter
-  def average(values: Iterator[Double]): Option[Double] = ???
+  def average(values: Iterator[Double]) : Option[Double] = values match {
+    case (values.length == 0) => None
+    case
+  }
 
   /**
    * 7) Monoids and almost MapReduce
