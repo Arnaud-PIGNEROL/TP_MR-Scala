@@ -1,10 +1,10 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\Louis\Documents\GitHub\TP_MR-Scala\TP_MR\src\main\scala\TP_MR_Pignerol_Tardy.scala:273:15: not found: type BufferedSource[0m
+[0m[[0m[31merror[0m] [0m[0mD:\efrei\cours\s8\Data engineer\github\TP_MR-Scala\TP_MR\src\main\scala\TP_MR_Pignerol_Tardy.scala:288:15: not found: type BufferedSource[0m
 [0m[[0m[31merror[0m] [0m[0m    val file: BufferedSource = Source.fromFile("resources/ski_stations_ratings.csv")[0m
 [0m[[0m[31merror[0m] [0m[0m              ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\Louis\Documents\GitHub\TP_MR-Scala\TP_MR\src\main\scala\TP_MR_Pignerol_Tardy.scala:281:35: not found: type MapView[0m
+[0m[[0m[31merror[0m] [0m[0mD:\efrei\cours\s8\Data engineer\github\TP_MR-Scala\TP_MR\src\main\scala\TP_MR_Pignerol_Tardy.scala:296:35: not found: type MapView[0m
 [0m[[0m[31merror[0m] [0m[0m    val partitionedRatingWithOne: MapView[String, Iterable[(Double, Int)]] =[0m
 [0m[[0m[31merror[0m] [0m[0m                                  ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\Louis\Documents\GitHub\TP_MR-Scala\TP_MR\src\main\scala\TP_MR_Pignerol_Tardy.scala:285:40: not found: type MapView[0m
+[0m[[0m[31merror[0m] [0m[0mD:\efrei\cours\s8\Data engineer\github\TP_MR-Scala\TP_MR\src\main\scala\TP_MR_Pignerol_Tardy.scala:300:40: not found: type MapView[0m
 [0m[[0m[31merror[0m] [0m[0m    val partitionedSumRatingsAndCount: MapView[String, (Double, Int)] =[0m
 [0m[[0m[31merror[0m] [0m[0m                                       ^[0m
 [0m[[0m[31merror[0m] [0m[0mthree errors found[0m
