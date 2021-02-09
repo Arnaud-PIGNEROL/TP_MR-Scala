@@ -113,7 +113,7 @@ object TP_MR_Pignerol_Tardy {
 
   //TODO define average which takes an Iterator of Double in parameter
   def average(values: Iterator[Double]) : Option[Double] = values match {
-    case values if (values.toList == Nil) => Some(0.0)
+    case values if (values.toList == Nil) => None
     case values => Some({val t = values.foldLeft((0.0, 0)) ((acc, i) => (acc._1 + i, acc._2 + 1)); t._1 / t._2})
   }
 
