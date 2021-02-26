@@ -23,14 +23,11 @@ object Ex4InvertedIndex {
    */
   def invertedIndex(): Map[String, Iterable[Tweet]] = {
     // create spark  configuration and spark context
-    val conf = new SparkConf ()
-        .setAppName ("Inverted index")
-        .setMaster ("local[*]")
+    val conf = new SparkConf ().setAppName ("Inverted index").setMaster ("local[*]")
 
     val sc = SparkContext.getOrCreate(conf)
 
-    val tweets = sc.textFile ("data/reduced-tweets.json")
-        .mapPartitions (TweetUtils.parseFromJson (_) )
+    val tweets = sc.textFile ("data/reduced-tweets.json").mapPartitions (TweetUtils.parseFromJson (_) )
     ???
   }
 

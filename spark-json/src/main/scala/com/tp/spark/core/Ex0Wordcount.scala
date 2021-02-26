@@ -25,17 +25,14 @@ object Ex0Wordcount {
     // create spark configuration and spark context: the Spark context is the entry point in Spark.
     // It represents the connexion to Spark and it is the place where you can configure the common properties
     // like the app name, the master url, memories allocation...
-    val conf = new SparkConf()
-                        .setAppName("Wordcount")
-                        .setMaster("local[*]") // here local mode. And * means you will use as much as you have cores.
+    val conf = new SparkConf().setAppName("Wordcount").setMaster("local[*]") // here local mode. And * means you will use as much as you have cores.
 
     val sc = SparkContext.getOrCreate(conf)
 
     // load data and create an RDD where each element will be a word
     // Here the flatMap method is used to separate the word in each line using the space separator
     // In this way it returns an RDD where each "element" is a word
-    sc.textFile(pathToFile)
-      .flatMap(_.split(" "))
+    sc.textFile(pathToFile).flatMap(_.split(" "))
   }
 
   /**

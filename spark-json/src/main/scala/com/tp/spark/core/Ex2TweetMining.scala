@@ -31,16 +31,13 @@ object Ex2TweetMining {
    */
   def loadData(): RDD[Tweet] = {
     // create spark configuration and spark context
-    val conf = new SparkConf()
-        .setAppName("Tweet mining")
-        .setMaster("local[*]")
+    val conf = new SparkConf().setAppName("Tweet mining").setMaster("local[*]")
 
     val sc = SparkContext.getOrCreate(conf)
 
     // Load the data and parse it into a Tweet.
     // Look at the Tweet Object in the TweetUtils class.
-    sc.textFile(pathToFile)
-        .mapPartitions(TweetUtils.parseFromJson(_))
+    sc.textFile(pathToFile).mapPartitions(TweetUtils.parseFromJson(_))
 
   }
 
@@ -48,21 +45,21 @@ object Ex2TweetMining {
    *  Find all the persons mentioned on tweets (case sensitive, duplicates allowed)
    */
   def mentionOnTweet(): RDD[String] = {
-    ???
+    loadData().flatMap{t => t.text.split(" ")}.filter{str => str.startsWith("@") && str.length > 1}
   }
 
   /**
    *  Count how many times each person is mentioned
    */
   def countMentions(): RDD[(String, Int)] = {
-    ???
+    mentionOnTweet().map{p => (p,1)}.reduceByKey(_ + _)
   }
 
   /**
    *  Find the 10 most mentioned persons by descending order
    */
   def top10mentions(): Array[(String, Int)] = {
-    ???
+    countMentions().takeOrdered(10)(Ordering[Int].reverse.on(_._2))
   }
 
 }

@@ -28,16 +28,13 @@ object Ex3HashTagMining {
    */
   def loadData(): RDD[Tweet] = {
     // create spark configuration and spark context
-    val conf = new SparkConf()
-        .setAppName("Hashtag mining")
-        .setMaster("local[*]")
+    val conf = new SparkConf().setAppName("Hashtag mining").setMaster("local[*]")
 
     val sc = SparkContext.getOrCreate(conf)
 
     // Load the data and parse it into a Tweet.
     // Look at the Tweet Object in the TweetUtils class.
-    sc.textFile(pathToFile)
-        .mapPartitions(TweetUtils.parseFromJson(_))
+    sc.textFile(pathToFile).mapPartitions(TweetUtils.parseFromJson(_))
   }
 
   /**
@@ -59,7 +56,7 @@ object Ex3HashTagMining {
    *  Find the 10 most popular Hashtags by descending order
    */
   def top10HashTags(): Array[(String, Int)] = {
-    ???
+    countMentions().takeOrdered(10)(Ordering[Int].reverse.on(_._2))
   }
 
 }
