@@ -111,21 +111,17 @@ object TP_MR_Pignerol_Tardy {
    * res0: Option[Double] = Some(4.5)
    */
 
-    /**
   //TODO define average which takes an Iterator of Double in parameter
-  def average(values: Iterator[Double]) : Option[Double] = values match {
-    case values if (values.toList == Nil) => None
-    case values => Some({val t = values.foldLeft((0.0, 0)) ((acc, i) => (acc._1 + i, acc._2 + 1)); t._1 / t._2})
-  }
-**/
-
   def average(values: Iterator[Double]): Option[Double] = {
     //An Iterator does not work like a List
     //see this to have a better understanding https://docs.scala-lang.org/overviews/collections/iterators.html
     if (values.isEmpty)  None
     else {
-      val res: (Int, Double) = values.foldLeft((0, 0.0)) {case ((count, sum), nextValue) => (count + 1, sum + nextValue)}
+      val res: (Int, Double) = values.foldLeft((0, 0.0)) {
+        case ((count, sum), nextValue) => (count + 1, sum + nextValue)
+      }
       Some(res._2 / res._1)
+
     }
   }
 
