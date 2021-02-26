@@ -1,0 +1,195 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(com.tp.spark.core.Ex0WordcountSpec, org.scalatest.tools.Framework$$anon$1@63b48e21, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(com.tp.spark.core.Ex1UserMiningSpec, org.scalatest.tools.Framework$$anon$1@63b48e21, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(com.tp.spark.core.Ex1UserMiningDFSpec, org.scalatest.tools.Framework$$anon$1@63b48e21, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(com.tp.spark.core.Ex0WordcountDFSpec, org.scalatest.tools.Framework$$anon$1@63b48e21, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(com.tp.spark.core.Ex4InvertedIndexSpec, org.scalatest.tools.Framework$$anon$1@63b48e21, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(com.tp.spark.core.Ex2TweetMiningSpec, org.scalatest.tools.Framework$$anon$1@63b48e21, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(com.tp.spark.core.Ex3HashTagMiningSpec, org.scalatest.tools.Framework$$anon$1@63b48e21, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx1UserMiningSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should count the number of couple (user, tweets) *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:230)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex1UserMining$.tweetsByUser(Ex1UserMining.scala:47)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex1UserMiningSpec$$anonfun$1.apply$mcV$sp(Ex1UserMiningSpec.scala:11)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex1UserMiningSpec$$anonfun$1.apply(Ex1UserMiningSpec.scala:10)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex1UserMiningSpec$$anonfun$1.apply(Ex1UserMiningSpec.scala:10)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- tweetByUserNumber should count the number of tweets by user *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:230)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex1UserMining$.tweetByUserNumber(Ex1UserMining.scala:54)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex1UserMiningSpec$$anonfun$2.apply$mcV$sp(Ex1UserMiningSpec.scala:16)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex1UserMiningSpec$$anonfun$2.apply(Ex1UserMiningSpec.scala:15)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex1UserMiningSpec$$anonfun$2.apply(Ex1UserMiningSpec.scala:15)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should return the top ten twitterers *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:230)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex1UserMining$.topTenTwitterers(Ex1UserMining.scala:62)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex1UserMiningSpec$$anonfun$3.apply$mcV$sp(Ex1UserMiningSpec.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex1UserMiningSpec$$anonfun$3.apply(Ex1UserMiningSpec.scala:21)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex1UserMiningSpec$$anonfun$3.apply(Ex1UserMiningSpec.scala:21)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx2TweetMiningSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should count the persons mentioned on tweets *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:230)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex2TweetMining$.mentionOnTweet(Ex2TweetMining.scala:51)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex2TweetMiningSpec$$anonfun$1.apply$mcV$sp(Ex2TweetMiningSpec.scala:11)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex2TweetMiningSpec$$anonfun$1.apply(Ex2TweetMiningSpec.scala:10)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex2TweetMiningSpec$$anonfun$1.apply(Ex2TweetMiningSpec.scala:10)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should count the number for each user mention *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx3HashTagMiningSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:230)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should count the hashtag mentioned on tweets *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex2TweetMining$.countMentions(Ex2TweetMining.scala:58)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex2TweetMiningSpec$$anonfun$2.apply$mcV$sp(Ex2TweetMiningSpec.scala:16)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:230)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex2TweetMiningSpec$$anonfun$2.apply(Ex2TweetMiningSpec.scala:15)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMining$.hashtagMentionedOnTweet(Ex3HashTagMining.scala:47)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex2TweetMiningSpec$$anonfun$2.apply(Ex2TweetMiningSpec.scala:15)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMiningSpec$$anonfun$1.apply$mcV$sp(Ex3HashTagMiningSpec.scala:11)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMiningSpec$$anonfun$1.apply(Ex3HashTagMiningSpec.scala:10)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMiningSpec$$anonfun$1.apply(Ex3HashTagMiningSpec.scala:10)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should define the top10 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should count the number of mention by hashtag *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:230)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:230)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex2TweetMining$.top10mentions(Ex2TweetMining.scala:65)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMining$.countMentions(Ex3HashTagMining.scala:55)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex2TweetMiningSpec$$anonfun$3.apply$mcV$sp(Ex2TweetMiningSpec.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMiningSpec$$anonfun$2.apply$mcV$sp(Ex3HashTagMiningSpec.scala:16)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex2TweetMiningSpec$$anonfun$3.apply(Ex2TweetMiningSpec.scala:21)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMiningSpec$$anonfun$2.apply(Ex3HashTagMiningSpec.scala:15)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex2TweetMiningSpec$$anonfun$3.apply(Ex2TweetMiningSpec.scala:21)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMiningSpec$$anonfun$2.apply(Ex3HashTagMiningSpec.scala:15)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should define the top10 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:230)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMining$.top10HashTags(Ex3HashTagMining.scala:62)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMiningSpec$$anonfun$3.apply$mcV$sp(Ex3HashTagMiningSpec.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMiningSpec$$anonfun$3.apply(Ex3HashTagMiningSpec.scala:21)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMiningSpec$$anonfun$3.apply(Ex3HashTagMiningSpec.scala:21)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx4InvertedIndexSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mException encountered when attempting to run a suite with class name: com.tp.spark.core.Ex4InvertedIndexSpec *** ABORTED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.ExceptionInInitializerError:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:79)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.Groups.parseStaticMapping(Groups.java:116)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.Groups.<init>(Groups.java:93)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.Groups.<init>(Groups.java:73)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.Groups.getUserToGroupsMappingService(Groups.java:293)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:283)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:260)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.UserGroupInformation.loginUserFromSubject(UserGroupInformation.java:789)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:774)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:647)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Cause: java.lang.StringIndexOutOfBoundsException: begin 0, end 3, length 2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3734)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.base/java.lang.String.substring(String.java:1903)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.util.Shell.<clinit>(Shell.java:50)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:79)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.Groups.parseStaticMapping(Groups.java:116)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.Groups.<init>(Groups.java:93)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.Groups.<init>(Groups.java:73)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.Groups.getUserToGroupsMappingService(Groups.java:293)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:283)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:260)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx0WordcountDFSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mException encountered when attempting to run a suite with class name: com.tp.spark.core.Ex0WordcountDFSpec *** ABORTED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.NoClassDefFoundError: Could not initialize class org.apache.hadoop.util.StringUtils[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.Groups.parseStaticMapping(Groups.java:116)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.Groups.<init>(Groups.java:93)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.Groups.<init>(Groups.java:73)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.Groups.getUserToGroupsMappingService(Groups.java:293)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:283)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:260)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.UserGroupInformation.loginUserFromSubject(UserGroupInformation.java:789)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:774)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:647)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.util.Utils$$anonfun$getCurrentUserName$1.apply(Utils.scala:2422)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx0WordcountSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mException encountered when attempting to run a suite with class name: com.tp.spark.core.Ex0WordcountSpec *** ABORTED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.NoClassDefFoundError: Could not initialize class org.apache.hadoop.util.StringUtils[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.Groups.parseStaticMapping(Groups.java:116)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.Groups.<init>(Groups.java:93)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.Groups.<init>(Groups.java:73)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.Groups.getUserToGroupsMappingService(Groups.java:293)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:283)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:260)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.UserGroupInformation.loginUserFromSubject(UserGroupInformation.java:789)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:774)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:647)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.util.Utils$$anonfun$getCurrentUserName$1.apply(Utils.scala:2422)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx1UserMiningDFSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mException encountered when attempting to run a suite with class name: com.tp.spark.core.Ex1UserMiningDFSpec *** ABORTED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.NoClassDefFoundError: Could not initialize class org.apache.hadoop.util.StringUtils[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.Groups.parseStaticMapping(Groups.java:116)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.Groups.<init>(Groups.java:93)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.Groups.<init>(Groups.java:73)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.Groups.getUserToGroupsMappingService(Groups.java:293)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:283)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:260)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.UserGroupInformation.loginUserFromSubject(UserGroupInformation.java:789)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:774)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:647)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.util.Utils$$anonfun$getCurrentUserName$1.apply(Utils.scala:2422)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
